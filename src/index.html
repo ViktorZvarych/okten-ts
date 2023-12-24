@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<style>
+		li {
+            border-bottom: 1px solid gray;
+			max-width: 400px;
+		}
+
+		.todoItem-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+		}
+
+        .todoItem-container p {
+			width: 35%;
+            word-break: break-word;
+		}
+
+		.todoItem-button {
+            height: 1.5rem;
+		}
+
+		.deletedTodoItem-button {
+			margin: 0.5rem 0.2rem;
+		}
+
+		.todoItem-deleted {
+			text-decoration: line-through;
+		}
+
+	</style>
+</head>
+<body>
+
+	<form name="addTodo-form">
+		<label>
+			<input type="text" name="addTodo-input" placeholder="Task" required>
+			<button type="submit">Add new task</button>
+		</label>
+	</form>
+
+	<hr>
+
+	<div>
+		<h3>New tasks:</h3>
+		<ol id="todo-ol"></ol>
+	</div>
+
+	<hr>
+
+	<div>
+		<h3>Deleted tasks:</h3>
+		<ol id="deletedTodo-ol"></ol>
+	</div>
+
+	<hr>
+<!--	<script src="test.js"></script>-->
+	<script src="todo-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+li {
+    border-bottom: 1px solid gray;
+    max-width: 400px;
+}
+
+.todoItem-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.todoItem-container p {
+    width: 35%;
+    word-break: break-word;
+}
+
+.todoItem-button {
+    height: 1.5rem;
+}
+
+.deletedTodoItem-button {
+    margin: 0.5rem 0.2rem;
+}
+
+.todoItem-deleted {
+    text-decoration: line-through;
+}

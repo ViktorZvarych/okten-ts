@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-test.ts": "tsc src/test.ts --watch"
+    "start-car": "tsc src/car-app.ts --watch"
   },
   "author": "",
   "license": "ISC",
   "dependences": {},
   "devDependencies": {
+    "@types/node": "^16.18.70",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/es6-promise": "^3.3.0"
   }
 }

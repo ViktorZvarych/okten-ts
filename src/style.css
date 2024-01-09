@@ -1,0 +1,13 @@
+.addCar-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 350px;
+    align-items: center;
+    input {
+        width: 350px;
+    }
+    button {
+        width: 350px;
+    }
+}
